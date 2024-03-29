@@ -1,0 +1,44 @@
+[
+    {
+        "question": "¿Qué cualidad valoras más en un amigo?",
+        "options": [
+            {
+                "answer": "Valentía",
+                "type": 1
+            },
+            {
+                "answer": "Inteligencia",
+                "type": 2
+            },
+            {
+                "answer": "Lealtad",
+                "type": 3
+            },
+            {
+                "answer": "Ambición",
+                "type": 4
+            }
+        ]
+    },
+    {
+        "question": "¿Qué tipo de mascota te gustaría tener?",
+        "options": [
+            {
+                "answer": "Un perro valiente y leal.",
+                "type": 1
+            },
+            {
+                "answer": "Un búho inteligente y sabio",
+                "type": 2
+            },
+            {
+                "answer": "Un gato cariñoso y juguetón",
+                "type": 3
+            },
+            {
+                "answer": "Una serpiente astuta y ambiciosa",
+                "type": 4
+            }
+        ]
+    }
+]
