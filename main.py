@@ -20,12 +20,14 @@ def main():
     person_name = typer.prompt("Cual es tu nombre/What's your name?")
     print(f"Hola/Hello {person_name}")
 
+    result = []
     with open('form.json') as f:
         questions = json.load(f)
         for q in questions:
-            print(q['question'])
-        
-            
+            answers = '\n'.join(f"{idx+1}) {i['answer']}" for idx, i in enumerate(q['options']))
+            text = f"{q['question']} \n\n{answers}\n"
+            result.append(typer.prompt(text))
+        print(result)
 
 if __name__ == "__main__":
     typer.run(main)
