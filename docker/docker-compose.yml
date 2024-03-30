@@ -9,4 +9,3 @@ services:
     container_name: sorting-hat
     volumes:
       - ../src:/src/
-    command: python main.py

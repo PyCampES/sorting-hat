@@ -4,5 +4,8 @@ build:
 install: build
 	docker run --name sorting-hat sorting-hat
 
-dev:
+up:
 	docker compose -f docker/docker-compose.yml up -d
+
+run:
+	docker compose -f docker/docker-compose.yml exec sorting-hat python app/main.py

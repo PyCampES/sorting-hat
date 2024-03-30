@@ -1,9 +1,9 @@
 FROM python:alpine3.12
 
 WORKDIR /src
-COPY requirements.txt /src
 
-RUN pip install -r requirements.txt
+COPY src/requirements.txt /src
+
 ADD . /src
 
-CMD ["PYTHON", "main.py"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
