@@ -17,7 +17,7 @@ with open("./sorting_hat.csv", "r") as csvfile:
 
 
 def main():
-    person_name = typer.prompt("Cual es tu nombre/What's your name?")
+    person_name = typer.prompt("¿Cuál es tu nombre?")
     print(f"Hola/Hello {person_name}")
 
     result = []

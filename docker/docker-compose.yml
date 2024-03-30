@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  sorting-hat:
+    build: .
+    volumes:
+      - ../src:/src/
+    command: python main.py
