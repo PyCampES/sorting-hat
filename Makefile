@@ -1,5 +1,5 @@
 build:
-	docker build -f docker/Dockerfile -t sorting-hat ./src/
+	docker build -t sorting-hat -f docker/Dockerfile ./src/
 
 install: build
 	docker run --name sorting-hat sorting-hat

@@ -2,7 +2,11 @@ version: '3'
 
 services:
   sorting-hat:
-    build: .
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: sorting-hat
+    container_name: sorting-hat
     volumes:
       - ../src:/src/
     command: python main.py
